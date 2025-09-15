@@ -1,0 +1,16 @@
+{
+  "name": "aws-architecture-test",
+  "version": "1.0.0",
+  "description": "AWS Architecture Drag and Drop Testing Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../client && npm install",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
